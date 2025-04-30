@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Data Mining Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .card {
+            margin-top: 20px;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        table, th, td {
+            text-align: left !important;
+        }
+        .table-responsive {
+            overflow-x: auto;
+        }
+        canvas {
+            max-width: 100%;
+            height: auto !important;
+        }
+    </style>
+</head>
+
+<body class="container py-4">
+
+<h1 class="mb-4">🧠 Data Mining Dashboard - Smart ML App</h1>
+
+<div class="mb-3">
+    <ul>
+        <li>First clear all the uploads</li>
+        <li>Then train the model</li>
+        <li>Next upload CSV file with matching columns to the CSV file used to train (only target column not required here)</li>
+    </ul>
+</div>
+
+<!-- Toast Notifications -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    {% for category, message in messages %}
+    <div class="toast align-items-center text-bg-{{ category }} border-0 show" role="alert">
+        <div class="d-flex">
+            <div class="toast-body">
+                {{ message }}
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+        </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+</div>
+
+<!-- Upload Buttons -->
+<div class="mb-4 d-flex flex-wrap gap-2">
+    <a href="{{ url_for('train') }}" class="btn btn-outline-secondary">🔧 Train a New Model</a>
+    <form method="POST" action="{{ url_for('clear_uploads') }}">
+        <button class="btn btn-outline-danger" type="submit">🗑️ Clear All Uploads</button>
+    </form>
+</div>
+
+<!-- Model Info -->
+{% if model_type and training_file %}
+<div class="alert alert-secondary">
+    <strong>Model Trained:</strong> {{ model_type | replace("_", " ") | title }}<br>
+    <strong>Training File:</strong> {{ training_file }}
+</div>
+{% endif %}
+
+{% if image_path %}
+<h6 class="text-muted">📁 Visual image at: <code>{{ image_path.split('/')[-1] }}</code></h6>
+{% endif %}
+
+<div class="container-fluid">
+
+    <!-- File Upload Form -->
+    <div class="card shadow-sm">
+        <div class="card-header">📂 Upload Data & Predict</div>
+        <div class="card-body">
+            <form method="POST" enctype="multipart/form-data">
+                <input class="form-control mb-3" type="file" name="file" required>
+                <button class="btn btn-success" type="submit">Upload & Predict</button>
+            </form>
+
+            {% if error %}
+            <div class="alert alert-danger mt-3" role="alert">
+                ❌ {{ error }}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Predictions Table -->
+    {% if table %}
+    <div class="card prediction-section shadow-sm mt-4">
+        <div class="card-header bg-success text-white">📋 Predictions</div>
+        <div class="card-body table-responsive">
+            {{ table | safe }}
+            {% if download_file %}
+            <a href="{{ url_for('static', filename=download_file) }}" class="btn btn-success mt-2">
+                ⬇️ Download Predictions (CSV)
+            </a>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Charts -->
+    {% if prediction_counts %}
+    <hr>
+    <h2>📊 Charts & Analytics</h2>
+    <div class="row">
+        <div class="col-12 col-md-6 mb-4">
+            <h5>Prediction Distribution</h5>
+            <canvas id="predictionChart"></canvas>
+        </div>
+        <div class="col-12 col-md-6 mb-4">
+            <h5>Income Distribution</h5>
+            <canvas id="incomeChart"></canvas>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Decision Tree -->
+    {% if image_path %}
+    <div class="card prediction-section shadow-sm mt-4">
+        <div class="card-header bg-info text-white">🌳 Decision Tree Visualization</div>
+        <div class="card-body text-center">
+            <img src="{{ url_for('static', filename='outputs/decision_tree.png') }}" class="img-fluid rounded shadow">
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("table").DataTable();
+    });
+</script>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+{% if prediction_counts %}
+<script>
+    const predictionData = {{ prediction_counts | tojson }};
+    const incomeData = {{ income_counts | tojson }};
+
+    new Chart(document.getElementById("predictionChart"), {
+        type: "pie",
+        data: {
+            labels: Object.keys(predictionData),
+            datasets: [{
+                label: "Predictions",
+                data: Object.values(predictionData),
+                backgroundColor: ["#4CAF50", "#F44336", "#FFC107", "#2196F3"]
+            }]
+        }
+    });
+
+    new Chart(document.getElementById("incomeChart"), {
+        type: "bar",
+        data: {
+            labels: Object.keys(incomeData),
+            datasets: [{
+                label: "Income Distribution",
+                data: Object.values(incomeData),
+                backgroundColor: "#2196F3"
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: { beginAtZero: true }
+            }
+        }
+    });
+</script>
+{% endif %}
+
+</body>
+</html>

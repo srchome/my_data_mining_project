@@ -1,0 +1,7 @@
+Age,Income,Student,Credit_Rating,Actual,Predicted,Actual_Label,Predicted_Label
+25,High,No,Fair,0,0,No,No
+38,Medium,Yes,Excellent,1,1,Yes,Yes
+34,High,No,Fair,0,0,No,No
+45,High,No,Excellent,0,0,No,No
+29,Medium,Yes,Excellent,1,1,Yes,Yes
+23,Low,No,Excellent,0,0,No,No

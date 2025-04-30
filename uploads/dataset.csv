@@ -1,0 +1,10 @@
+Age,Income,Student,Credit_Rating,Buys_Product
+25,High,No,Fair,No
+45,High,No,Excellent,No
+35,Medium,Yes,Fair,Yes
+33,Low,Yes,Fair,Yes
+52,Low,Yes,Excellent,Yes
+23,Low,No,Excellent,No
+43,Medium,Yes,Fair,Yes
+36,High,No,Excellent,No
+
