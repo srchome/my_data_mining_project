@@ -1,0 +1,501 @@
+Age,Department,JobRole,YearsAtCompany,MonthlyIncome
+21,Human Resources,HR Coordinator,22,3202
+20,Sales,Laboratory Technician,26,14116
+37,Research & Development,Laboratory Technician,20,12403
+42,Human Resources,Sales Executive,18,14268
+36,Human Resources,Sales Executive,19,18936
+31,Sales,HR Coordinator,23,6654
+24,Research & Development,Manager,2,12582
+56,Sales,Research Scientist,17,15479
+44,Research & Development,Sales Executive,10,6209
+60,Research & Development,Manager,23,11508
+25,Sales,Research Scientist,30,12557
+51,Research & Development,Research Scientist,20,6264
+38,Human Resources,Research Scientist,14,18320
+33,Research & Development,Manager,21,11982
+40,Human Resources,Research Scientist,20,13546
+33,Human Resources,HR Coordinator,22,18199
+45,Human Resources,HR Coordinator,18,9880
+40,Human Resources,HR Coordinator,3,12004
+45,Research & Development,HR Coordinator,10,17195
+39,Human Resources,HR Coordinator,30,17974
+49,Research & Development,Manager,21,12631
+20,Human Resources,HR Coordinator,19,16198
+36,Research & Development,Sales Executive,27,18184
+24,Research & Development,Manager,27,3482
+42,Sales,Research Scientist,8,9000
+49,Sales,HR Coordinator,28,14781
+25,Research & Development,Laboratory Technician,28,7231
+40,Human Resources,Laboratory Technician,8,3870
+28,Human Resources,HR Coordinator,25,6311
+55,Human Resources,Manager,5,8897
+22,Research & Development,HR Coordinator,24,11146
+54,Research & Development,Sales Executive,20,3572
+25,Research & Development,Laboratory Technician,14,11084
+47,Sales,Manager,28,16925
+30,Research & Development,Research Scientist,28,3264
+31,Human Resources,Laboratory Technician,19,17736
+24,Human Resources,Research Scientist,11,15571
+59,Research & Development,HR Coordinator,7,15526
+24,Research & Development,Research Scientist,9,13710
+44,Research & Development,Laboratory Technician,11,16623
+37,Sales,HR Coordinator,23,12015
+37,Sales,HR Coordinator,26,3635
+34,Human Resources,Sales Executive,21,12568
+45,Research & Development,Manager,29,14619
+25,Human Resources,Laboratory Technician,9,8739
+40,Sales,Manager,16,11998
+50,Human Resources,Research Scientist,16,3383
+50,Sales,Laboratory Technician,27,18883
+30,Human Resources,HR Coordinator,11,19955
+56,Human Resources,Sales Executive,17,11588
+20,Sales,Manager,23,6538
+34,Sales,Manager,3,11016
+53,Research & Development,Laboratory Technician,30,16448
+42,Sales,Sales Executive,24,13517
+51,Sales,Sales Executive,29,16906
+50,Sales,Research Scientist,15,19665
+32,Sales,Sales Executive,12,16852
+26,Human Resources,HR Coordinator,23,3038
+20,Human Resources,Sales Executive,8,16092
+46,Research & Development,Sales Executive,30,11991
+52,Research & Development,HR Coordinator,19,7195
+40,Sales,Manager,25,16664
+35,Human Resources,HR Coordinator,11,13705
+39,Research & Development,HR Coordinator,27,7111
+33,Sales,Laboratory Technician,20,6226
+55,Sales,Research Scientist,27,11595
+59,Human Resources,Manager,3,17825
+39,Human Resources,HR Coordinator,2,13043
+52,Research & Development,Sales Executive,3,3675
+32,Human Resources,Research Scientist,9,6507
+40,Sales,Research Scientist,12,18520
+54,Research & Development,Manager,19,15797
+40,Research & Development,Manager,0,6546
+40,Sales,HR Coordinator,30,14805
+46,Sales,Manager,24,12098
+49,Research & Development,Laboratory Technician,12,16897
+22,Human Resources,Research Scientist,18,14800
+46,Research & Development,Manager,4,13303
+37,Sales,Laboratory Technician,23,13457
+51,Research & Development,HR Coordinator,23,17607
+34,Sales,Sales Executive,1,16564
+41,Research & Development,Research Scientist,24,9010
+25,Research & Development,Laboratory Technician,22,13893
+58,Sales,Sales Executive,4,10110
+44,Sales,Laboratory Technician,4,4582
+53,Sales,HR Coordinator,17,10755
+38,Research & Development,Sales Executive,18,6997
+24,Sales,Research Scientist,2,5653
+47,Sales,Manager,26,9917
+48,Research & Development,Laboratory Technician,14,4957
+40,Sales,Manager,16,3952
+49,Sales,Sales Executive,30,4843
+32,Human Resources,Laboratory Technician,14,7426
+31,Human Resources,Manager,12,6641
+58,Sales,HR Coordinator,9,4353
+57,Sales,Manager,13,15413
+34,Sales,HR Coordinator,3,8182
+31,Sales,HR Coordinator,3,16871
+40,Sales,Laboratory Technician,25,4141
+21,Human Resources,Laboratory Technician,4,14339
+33,Human Resources,Sales Executive,3,18199
+32,Human Resources,HR Coordinator,18,3665
+35,Sales,Manager,9,12708
+60,Human Resources,Manager,21,17182
+55,Human Resources,Manager,7,19608
+56,Human Resources,HR Coordinator,7,11754
+34,Sales,Sales Executive,10,10610
+58,Research & Development,Research Scientist,2,14979
+40,Research & Development,Manager,1,3680
+56,Research & Development,HR Coordinator,13,16326
+21,Human Resources,Laboratory Technician,19,4204
+38,Sales,Laboratory Technician,14,16305
+29,Human Resources,Sales Executive,0,3876
+24,Human Resources,Sales Executive,28,16768
+41,Research & Development,HR Coordinator,17,9263
+41,Research & Development,Manager,18,7833
+20,Sales,Laboratory Technician,16,17946
+22,Human Resources,Sales Executive,30,12240
+29,Human Resources,Research Scientist,0,11866
+54,Human Resources,Laboratory Technician,9,14456
+31,Sales,Manager,20,14220
+60,Human Resources,Sales Executive,7,19317
+45,Research & Development,Research Scientist,4,4234
+35,Sales,Laboratory Technician,24,10910
+32,Research & Development,Research Scientist,6,18968
+35,Research & Development,HR Coordinator,1,17189
+31,Sales,Manager,19,12010
+36,Sales,Manager,14,12365
+49,Sales,HR Coordinator,25,11903
+49,Sales,Sales Executive,26,17710
+21,Sales,HR Coordinator,1,19050
+47,Sales,Manager,15,14623
+52,Human Resources,Manager,1,17928
+47,Human Resources,HR Coordinator,12,5434
+28,Sales,HR Coordinator,0,8267
+59,Research & Development,Laboratory Technician,6,8804
+32,Research & Development,Manager,14,9173
+28,Research & Development,Research Scientist,13,4620
+52,Human Resources,Research Scientist,25,15166
+42,Human Resources,Sales Executive,11,6189
+47,Sales,Sales Executive,18,7917
+52,Research & Development,HR Coordinator,14,16100
+57,Sales,Sales Executive,18,17054
+41,Human Resources,Laboratory Technician,23,11066
+46,Human Resources,Laboratory Technician,23,14121
+27,Sales,Manager,5,10536
+53,Sales,Laboratory Technician,28,8473
+47,Sales,Sales Executive,30,14674
+50,Research & Development,Laboratory Technician,12,8332
+49,Research & Development,Sales Executive,16,9352
+22,Research & Development,Research Scientist,18,3492
+30,Human Resources,Sales Executive,21,17295
+46,Sales,Research Scientist,16,5847
+42,Human Resources,Research Scientist,18,18821
+26,Sales,Laboratory Technician,1,14594
+59,Sales,Sales Executive,3,18659
+24,Research & Development,Sales Executive,18,4203
+49,Human Resources,Laboratory Technician,21,9528
+22,Research & Development,Sales Executive,27,14967
+24,Research & Development,Laboratory Technician,27,12178
+48,Sales,Manager,26,18433
+39,Human Resources,Research Scientist,1,19154
+60,Research & Development,HR Coordinator,13,7613
+49,Human Resources,HR Coordinator,6,9296
+36,Human Resources,HR Coordinator,12,15830
+21,Sales,Research Scientist,30,13996
+28,Human Resources,HR Coordinator,6,16620
+55,Research & Development,Research Scientist,2,13416
+33,Human Resources,Sales Executive,17,19948
+46,Human Resources,Laboratory Technician,15,15142
+53,Sales,Research Scientist,13,15911
+50,Research & Development,Research Scientist,7,4475
+58,Human Resources,Laboratory Technician,2,19974
+36,Sales,Laboratory Technician,20,9859
+59,Research & Development,Sales Executive,13,13088
+29,Research & Development,HR Coordinator,10,12521
+49,Human Resources,Research Scientist,3,5116
+23,Sales,Sales Executive,24,11195
+22,Human Resources,Research Scientist,4,18438
+41,Human Resources,Research Scientist,14,4200
+26,Human Resources,Sales Executive,26,4889
+42,Human Resources,Manager,29,14034
+46,Human Resources,Research Scientist,1,13595
+42,Human Resources,HR Coordinator,14,18781
+43,Research & Development,Laboratory Technician,26,13823
+58,Human Resources,Research Scientist,0,7181
+22,Research & Development,Manager,8,15968
+42,Sales,Manager,3,14328
+42,Research & Development,Research Scientist,18,4532
+43,Research & Development,Research Scientist,6,3082
+55,Sales,Manager,8,11865
+20,Sales,Manager,25,12426
+30,Human Resources,Manager,4,5092
+35,Sales,HR Coordinator,20,16983
+47,Research & Development,HR Coordinator,10,11722
+20,Sales,Manager,5,4419
+36,Research & Development,Sales Executive,3,18898
+34,Human Resources,Laboratory Technician,27,5942
+39,Sales,HR Coordinator,30,10148
+38,Research & Development,Research Scientist,25,19782
+38,Research & Development,HR Coordinator,29,11066
+28,Human Resources,Research Scientist,17,5581
+58,Research & Development,Sales Executive,9,15238
+33,Research & Development,Manager,29,17517
+57,Human Resources,Research Scientist,0,9515
+50,Sales,Manager,16,8146
+27,Research & Development,Sales Executive,13,17427
+45,Sales,Manager,25,18647
+48,Human Resources,Manager,26,7654
+32,Research & Development,Research Scientist,0,15457
+54,Human Resources,Manager,24,15427
+53,Research & Development,Sales Executive,20,7101
+34,Human Resources,Sales Executive,16,8976
+40,Research & Development,HR Coordinator,11,19279
+29,Research & Development,Laboratory Technician,8,7579
+56,Sales,Laboratory Technician,3,13479
+24,Human Resources,Sales Executive,16,17946
+22,Human Resources,Sales Executive,4,5760
+36,Sales,Research Scientist,1,13841
+54,Sales,Manager,9,9577
+21,Sales,Laboratory Technician,20,8554
+28,Research & Development,Research Scientist,7,3200
+25,Sales,HR Coordinator,18,4659
+47,Sales,Sales Executive,3,8682
+43,Sales,Sales Executive,1,6989
+31,Human Resources,Laboratory Technician,12,10097
+32,Research & Development,Laboratory Technician,2,18304
+56,Research & Development,HR Coordinator,11,10015
+28,Human Resources,Sales Executive,11,7093
+25,Human Resources,HR Coordinator,15,3578
+28,Sales,Manager,17,3385
+26,Human Resources,Manager,17,7180
+59,Human Resources,Sales Executive,28,17391
+34,Sales,Sales Executive,7,10724
+37,Sales,HR Coordinator,24,9934
+45,Human Resources,HR Coordinator,23,17584
+43,Human Resources,Manager,28,11169
+49,Human Resources,Sales Executive,7,8306
+49,Human Resources,Manager,22,13793
+50,Human Resources,Research Scientist,5,16089
+20,Human Resources,Laboratory Technician,22,9877
+57,Human Resources,Laboratory Technician,5,6870
+60,Sales,Sales Executive,7,10982
+57,Sales,HR Coordinator,19,13890
+27,Research & Development,Sales Executive,5,7274
+43,Human Resources,Manager,2,17413
+56,Human Resources,Laboratory Technician,10,3579
+53,Research & Development,Sales Executive,20,14968
+39,Sales,Sales Executive,24,12323
+53,Research & Development,HR Coordinator,4,10102
+59,Research & Development,Research Scientist,24,6022
+27,Research & Development,Sales Executive,27,3417
+21,Human Resources,Manager,9,5930
+25,Human Resources,Manager,17,5953
+37,Research & Development,Laboratory Technician,25,12246
+41,Sales,Manager,6,13585
+21,Research & Development,Laboratory Technician,4,14634
+29,Research & Development,Manager,1,11598
+32,Sales,Sales Executive,27,4449
+33,Human Resources,Research Scientist,24,15164
+49,Sales,HR Coordinator,2,7966
+39,Sales,Sales Executive,11,3533
+23,Research & Development,HR Coordinator,19,15167
+29,Research & Development,Sales Executive,18,4469
+31,Human Resources,Research Scientist,0,3685
+23,Sales,Laboratory Technician,10,13269
+40,Research & Development,HR Coordinator,21,16850
+42,Research & Development,HR Coordinator,18,11672
+35,Sales,Research Scientist,19,10136
+36,Human Resources,Manager,16,19521
+49,Human Resources,HR Coordinator,2,8116
+35,Research & Development,Laboratory Technician,7,13809
+59,Sales,Manager,15,14184
+55,Research & Development,Manager,6,9286
+44,Sales,Laboratory Technician,26,3583
+27,Sales,Research Scientist,9,3938
+38,Research & Development,Manager,10,14368
+60,Human Resources,HR Coordinator,9,9966
+50,Sales,Sales Executive,8,3517
+56,Human Resources,Sales Executive,11,11284
+45,Research & Development,Manager,4,19756
+32,Sales,Research Scientist,4,6158
+22,Human Resources,HR Coordinator,13,19078
+31,Sales,Manager,7,9545
+49,Sales,HR Coordinator,27,19490
+29,Human Resources,HR Coordinator,8,15368
+39,Sales,HR Coordinator,24,12596
+46,Human Resources,Manager,10,4164
+58,Research & Development,Laboratory Technician,21,13206
+35,Human Resources,Laboratory Technician,27,14304
+37,Sales,Research Scientist,6,10120
+30,Human Resources,Manager,26,18094
+32,Sales,Laboratory Technician,8,18537
+22,Sales,Research Scientist,20,14166
+25,Research & Development,HR Coordinator,17,18752
+53,Sales,Research Scientist,14,16685
+35,Human Resources,Manager,18,7829
+54,Human Resources,Sales Executive,1,16617
+60,Sales,HR Coordinator,6,13337
+24,Human Resources,Laboratory Technician,30,3737
+39,Human Resources,Manager,15,11603
+32,Sales,HR Coordinator,13,15271
+34,Research & Development,Manager,1,6295
+47,Sales,Sales Executive,19,16088
+54,Sales,Research Scientist,30,9990
+26,Research & Development,Laboratory Technician,9,13105
+27,Human Resources,Research Scientist,7,14133
+41,Human Resources,Manager,30,7887
+42,Research & Development,Sales Executive,29,17296
+60,Human Resources,HR Coordinator,22,12110
+60,Human Resources,Sales Executive,12,12682
+26,Human Resources,Manager,28,11844
+45,Sales,Sales Executive,25,8522
+34,Research & Development,HR Coordinator,12,16745
+30,Sales,Research Scientist,7,11402
+20,Research & Development,Manager,27,12151
+56,Research & Development,Laboratory Technician,30,7550
+48,Human Resources,Laboratory Technician,5,19334
+42,Research & Development,Sales Executive,23,10158
+48,Research & Development,HR Coordinator,11,14878
+34,Human Resources,Sales Executive,3,6076
+25,Human Resources,Research Scientist,25,10238
+46,Sales,Laboratory Technician,26,14358
+43,Research & Development,HR Coordinator,14,13306
+20,Research & Development,HR Coordinator,19,12976
+37,Human Resources,Laboratory Technician,6,18967
+52,Sales,HR Coordinator,14,18132
+35,Research & Development,HR Coordinator,18,18121
+50,Research & Development,HR Coordinator,29,5661
+58,Research & Development,Research Scientist,11,5346
+43,Human Resources,HR Coordinator,2,4783
+42,Human Resources,Manager,29,13438
+51,Sales,Sales Executive,8,7046
+47,Sales,Laboratory Technician,16,9761
+29,Research & Development,Laboratory Technician,23,6034
+39,Human Resources,HR Coordinator,24,17611
+26,Research & Development,Laboratory Technician,4,6632
+30,Human Resources,Laboratory Technician,17,18990
+37,Sales,Research Scientist,22,8376
+54,Human Resources,Manager,11,5206
+30,Human Resources,Sales Executive,27,13640
+52,Research & Development,Research Scientist,29,14916
+42,Sales,Manager,30,11483
+45,Research & Development,HR Coordinator,27,8087
+20,Sales,Manager,15,19764
+54,Human Resources,Research Scientist,19,12301
+31,Sales,Research Scientist,19,4355
+40,Human Resources,Research Scientist,19,18451
+51,Research & Development,Sales Executive,14,7862
+24,Human Resources,Research Scientist,27,12031
+22,Sales,HR Coordinator,18,18619
+29,Human Resources,Sales Executive,27,12399
+58,Human Resources,Manager,26,6212
+26,Human Resources,Manager,10,10215
+47,Research & Development,HR Coordinator,15,8080
+48,Research & Development,Research Scientist,21,12993
+24,Human Resources,Laboratory Technician,20,18807
+49,Research & Development,Laboratory Technician,1,12497
+58,Sales,Laboratory Technician,16,4001
+51,Sales,Laboratory Technician,27,3428
+28,Human Resources,Research Scientist,4,13244
+57,Research & Development,HR Coordinator,11,3310
+20,Sales,Manager,21,8927
+46,Research & Development,HR Coordinator,23,14215
+57,Human Resources,Research Scientist,25,8111
+55,Sales,Sales Executive,30,6525
+44,Sales,Manager,7,5052
+55,Research & Development,Manager,7,13614
+31,Sales,Laboratory Technician,22,18842
+35,Research & Development,Manager,10,13508
+37,Sales,Sales Executive,18,11583
+55,Human Resources,Sales Executive,17,4192
+34,Sales,Manager,3,4030
+43,Sales,Sales Executive,30,6107
+43,Sales,HR Coordinator,14,9366
+57,Research & Development,Laboratory Technician,16,6901
+39,Human Resources,Laboratory Technician,16,13075
+50,Research & Development,HR Coordinator,8,18843
+39,Human Resources,Sales Executive,12,15576
+39,Sales,HR Coordinator,0,10242
+47,Research & Development,Manager,24,7769
+59,Research & Development,HR Coordinator,14,3509
+27,Human Resources,Manager,24,6641
+51,Human Resources,Laboratory Technician,25,13929
+41,Research & Development,Laboratory Technician,5,16749
+39,Research & Development,Sales Executive,12,18096
+43,Research & Development,Research Scientist,28,6389
+49,Sales,Laboratory Technician,9,7901
+33,Sales,HR Coordinator,0,5133
+22,Research & Development,Research Scientist,22,4900
+29,Research & Development,Manager,21,10850
+27,Human Resources,Research Scientist,4,4113
+25,Sales,Research Scientist,5,7736
+26,Sales,Research Scientist,24,9968
+43,Sales,HR Coordinator,4,8582
+55,Sales,Laboratory Technician,24,19994
+47,Human Resources,HR Coordinator,19,19321
+51,Sales,Research Scientist,24,18223
+44,Human Resources,HR Coordinator,24,9209
+21,Research & Development,Research Scientist,25,14991
+41,Human Resources,Laboratory Technician,4,17050
+57,Sales,Sales Executive,10,12941
+47,Human Resources,Sales Executive,22,7768
+20,Research & Development,Sales Executive,29,19599
+56,Research & Development,Manager,13,16597
+59,Research & Development,HR Coordinator,12,15745
+56,Sales,HR Coordinator,23,10472
+54,Research & Development,HR Coordinator,1,14693
+59,Research & Development,Manager,20,19011
+40,Sales,Manager,15,5128
+28,Human Resources,HR Coordinator,25,8651
+44,Human Resources,Manager,12,15281
+32,Research & Development,Laboratory Technician,0,6126
+24,Human Resources,Laboratory Technician,28,6206
+24,Human Resources,Sales Executive,16,5048
+38,Research & Development,Manager,18,13142
+55,Research & Development,Research Scientist,18,16417
+38,Research & Development,Laboratory Technician,28,15496
+40,Human Resources,Laboratory Technician,25,18909
+38,Human Resources,Sales Executive,16,16996
+57,Sales,Sales Executive,23,6803
+32,Research & Development,Sales Executive,18,3743
+46,Sales,Laboratory Technician,2,5974
+46,Human Resources,HR Coordinator,2,4639
+59,Research & Development,Laboratory Technician,25,17506
+23,Human Resources,Sales Executive,3,8065
+36,Research & Development,HR Coordinator,13,7848
+24,Research & Development,HR Coordinator,30,16401
+25,Human Resources,HR Coordinator,16,14159
+54,Research & Development,Manager,26,12066
+54,Research & Development,Sales Executive,22,4623
+37,Research & Development,Manager,4,7580
+58,Sales,Sales Executive,28,4025
+37,Human Resources,Research Scientist,17,19274
+55,Human Resources,Sales Executive,29,17029
+46,Human Resources,Sales Executive,25,17900
+59,Sales,HR Coordinator,15,10135
+40,Human Resources,Laboratory Technician,14,11610
+51,Sales,Laboratory Technician,13,3607
+22,Human Resources,HR Coordinator,28,9201
+41,Human Resources,HR Coordinator,12,7968
+31,Research & Development,Manager,24,14637
+51,Sales,Sales Executive,29,16478
+54,Human Resources,Sales Executive,4,16842
+25,Research & Development,Sales Executive,23,9399
+49,Human Resources,Research Scientist,30,11513
+23,Sales,Sales Executive,11,15783
+33,Research & Development,Research Scientist,29,16457
+42,Sales,Manager,19,18073
+37,Research & Development,Manager,6,13815
+23,Research & Development,Laboratory Technician,15,7955
+46,Human Resources,Research Scientist,6,3727
+21,Human Resources,Research Scientist,14,5756
+54,Sales,HR Coordinator,20,10347
+51,Human Resources,Laboratory Technician,8,4366
+33,Research & Development,Research Scientist,26,14505
+60,Human Resources,Research Scientist,17,8982
+21,Human Resources,HR Coordinator,1,7381
+24,Human Resources,Sales Executive,28,10253
+21,Sales,Sales Executive,2,11413
+45,Human Resources,Sales Executive,18,8478
+43,Sales,Laboratory Technician,24,7212
+59,Research & Development,Laboratory Technician,3,6189
+46,Sales,Research Scientist,20,7829
+48,Human Resources,Manager,30,8450
+43,Sales,Laboratory Technician,8,17626
+20,Human Resources,Manager,9,14106
+50,Research & Development,HR Coordinator,20,7259
+30,Sales,HR Coordinator,15,12237
+26,Human Resources,Manager,23,18550
+49,Research & Development,Laboratory Technician,29,4968
+52,Sales,Sales Executive,17,16468
+23,Human Resources,Manager,29,10374
+42,Human Resources,HR Coordinator,9,19421
+33,Research & Development,Sales Executive,18,10555
+41,Research & Development,Sales Executive,3,5210
+50,Human Resources,Laboratory Technician,13,19835
+28,Human Resources,Research Scientist,19,5788
+35,Human Resources,Laboratory Technician,16,7308
+32,Research & Development,Sales Executive,9,11106
+24,Sales,HR Coordinator,4,9295
+50,Sales,Manager,8,9578
+24,Sales,Sales Executive,15,9324
+58,Human Resources,Sales Executive,16,13446
+43,Research & Development,HR Coordinator,11,5999
+50,Human Resources,Research Scientist,2,16219
+24,Sales,Research Scientist,2,17213
+50,Sales,Sales Executive,2,7044
+43,Sales,Research Scientist,1,17131
+28,Human Resources,Laboratory Technician,6,14144
+30,Human Resources,Sales Executive,21,3682
+30,Human Resources,HR Coordinator,0,16414
+26,Research & Development,Research Scientist,11,7490
+49,Research & Development,Sales Executive,9,12125
+39,Human Resources,Laboratory Technician,28,14600
+23,Human Resources,Sales Executive,19,3359
+58,Human Resources,HR Coordinator,8,12042
+25,Human Resources,Manager,28,9038
+29,Human Resources,Laboratory Technician,13,8999
+58,Research & Development,HR Coordinator,7,18164

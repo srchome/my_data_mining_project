@@ -1,0 +1,18 @@
+Age,Department,JobRole,YearsAtCompany,MonthlyIncome,Attrition
+29,Sales,Sales Executive,2,4500,No
+34,Research & Development,Research Scientist,6,6200,Yes
+41,Sales,Sales Representative,4,3900,No
+25,Research & Development,Laboratory Technician,1,3200,Yes
+37,Human Resources,HR Manager,10,9000,No
+28,Research & Development,Healthcare Representative,3,5200,No
+50,Sales,Sales Executive,12,7800,No
+39,Research & Development,Manufacturing Director,15,11000,No
+31,Human Resources,Human Resources,2,4700,Yes
+45,Research & Development,Research Director,8,10200,No
+30,Sales,Sales Executive,5,4900,Yes
+36,Research & Development,Research Scientist,7,7300,No
+42,Sales,Sales Representative,3,4100,No
+27,Research & Development,HR Manager,2,3600,Yes
+38,Human Resources,HR Manager,6,8400,No
+40,Sales,Manager,6,8500,No
+42,Sales,Manager,7,9000,No

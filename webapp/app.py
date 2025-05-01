@@ -8,6 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import LabelEncoder
+from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
 from flask import flash
 
@@ -150,6 +151,7 @@ def train():
     model_trained = False
     filename = None
     decision_tree_trained = False
+    accuracy = None
 
     if request.method == "POST":
         if 'file' in request.files:
@@ -204,18 +206,23 @@ def train():
 
             # Create model based on choice
             if model_choice == "decision_tree":
-                model = DecisionTreeClassifier(random_state=42)
+                #model = DecisionTreeClassifier(max_depth=4, min_samples_leaf=10, random_state=42)
+                model = DecisionTreeClassifier(max_depth=10, min_samples_leaf=2, random_state=42)
                 decision_tree_trained = True
             elif model_choice == "random_forest":
-                model = RandomForestClassifier(random_state=42)
+                model = RandomForestClassifier(n_estimators=100, random_state=42)
+                decision_tree_trained = False
             elif model_choice == "logistic_regression":
                 model = LogisticRegression(max_iter=1000)
+                decision_tree_trained = False
             elif model_choice == "knn":
                 model = KNeighborsClassifier()
+                decision_tree_trained = False
             else:
                 return "❌ Invalid model selected.", 400
 
             model.fit(X, y)
+            accuracy = accuracy_score(y, model.predict(X))
 
             joblib.dump(model, MODEL_PATH)
             joblib.dump(label_encoders, ENCODER_PATH)
@@ -224,6 +231,7 @@ def train():
 
             # Save Decision Tree plot only if applicable
             if decision_tree_trained:
+                """
                 plt.figure(figsize=(20, 10))
                 plot_tree(
                     model,
@@ -234,6 +242,25 @@ def train():
                 plt.savefig(PLOT_PATH)
                 plt.savefig(WEBAPP_PLOT_PATH)
                 plt.close()
+                """
+                plt.figure(figsize=(40, 25))  # Wider + taller
+                plot_tree(
+                    model,
+                    feature_names=X.columns,
+                    class_names=label_encoders[target_column].classes_ if target_column in label_encoders else None,
+                    filled=True,
+                    fontsize=10  # Optional: smaller font for dense trees
+                    )
+                plt.tight_layout()
+                plt.savefig(PLOT_PATH)
+                plt.savefig(WEBAPP_PLOT_PATH)
+                plt.close()
+            else:
+                #clear the decision tree plot
+                if os.path.exists(PLOT_PATH):
+                    os.remove(PLOT_PATH)
+                if os.path.exists(WEBAPP_PLOT_PATH):
+                    os.remove(WEBAPP_PLOT_PATH)
 
             # Save target column
             with open(TARGET_COLUMN_PATH, "w") as f:
@@ -256,7 +283,8 @@ def train():
                 columns=[],
                 filename=None,
                 model_trained=True,
-                decision_tree_trained=decision_tree_trained
+                decision_tree_trained=decision_tree_trained,
+                accuracy=round(accuracy * 100, 2)  # Percentage
             )
 
     return render_template(
